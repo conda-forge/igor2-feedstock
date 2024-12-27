@@ -15,16 +15,16 @@ build:
     - igorpackedexperiment = igor2.cli.igorpackedexperiment:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6,<4
+    - python {{ python_min }}
     - setuptools >=45
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.6,<4
+    - python >={{ python_min }},<4
     - numpy >=1.19.2
 
 test:
@@ -36,6 +36,7 @@ test:
     - igorpackedexperiment --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/AFM-analysis/igor2
