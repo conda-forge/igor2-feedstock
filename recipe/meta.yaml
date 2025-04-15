@@ -1,5 +1,5 @@
 {% set name = "igor2" %}
-{% set version = "0.5.11" %}
+{% set version = "0.5.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32311a429b7dec027609e2d5f2c9bdca632b0cb233760522e6fc995f734bb558
+  sha256: 5a284ac3b7aa6a8a59f28509d06359ea29e08d6f9f563566d2a0f15ea9681893
 
 build:
   entry_points:
