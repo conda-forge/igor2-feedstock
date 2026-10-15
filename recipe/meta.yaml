@@ -1,13 +1,13 @@
 {% set name = "igor2" %}
-{% set version = "0.5.13" %}
+{% set version = "0.5.14" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 72b6ac8c73c0940182a5b832ad7924447b217ea4a25f650dc6574d7230b95e18
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: f66bb31d0805029c8b1dcd5eb6971b9fcabbbe773836dd3134302929e3f8303a
 
 build:
   entry_points:
