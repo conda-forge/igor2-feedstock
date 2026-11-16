@@ -1,5 +1,5 @@
 {% set name = "igor2" %}
-{% set version = "0.5.15" %}
+{% set version = "0.5.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b95f20432405cc74abf8e6b34932dd2f59d7e7ecd94180f5f46595472ce38cd8
+  sha256: 1937912aded49387f2a932004156324952ce8864bee377e70b6fce00e3598b0e
 
 build:
   entry_points:
